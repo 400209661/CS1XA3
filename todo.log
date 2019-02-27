@@ -1,0 +1,2 @@
+Project01/project_analyze.sh:	grep -r --exclude="todo.log" "#TODO" * > todo.log
+Project01/project_analyze.sh:	echo "Each line of every file in the current repo with the tag #TODO has been loged in todo.log"

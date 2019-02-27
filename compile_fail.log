@@ -1,0 +1,4 @@
+  File "./fail.py", line 1
+    print("T)
+            ^
+SyntaxError: EOL while scanning string literal

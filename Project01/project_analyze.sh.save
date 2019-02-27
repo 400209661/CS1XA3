@@ -1,0 +1,21 @@
+cd ..
+#!/bin/bash
+# Bash Script
+
+# Asks for user input on what they want to do.
+#echo -n "What do you want to do? (File Count)"
+#read action
+#echo -n "You want to ${action}!"
+
+#File Count
+count_html=$(ls -l | grep *.html | wc -l)
+count_js=$(ls -l | grep *.js | wc -l)
+count_css=$(ls -l | grep *.css | wc -l)
+count_py=$(ls -l | grep *.py | wc -l)
+count_hs=$(ls -l | grep *.hs | wc -l)
+count_sh=$(ls -l | grep *.sh | wc -l)
+
+
+echo "Hmtml: $count_sh"count_sh=$(ls -l | grep *.sh | wc -l)
+
+
