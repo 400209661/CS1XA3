@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 scores = [
     {
-        'username': 'Jordana',
+        'username': 'Alex',
         'score': '99',
         'date_posted': 'April 27 2019'
     },
