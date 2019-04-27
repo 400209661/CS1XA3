@@ -9,9 +9,9 @@
     {% endif %}
   </head>
   <body>
-    {% for score in scores %}
-        <h1>{{ scores.score }}</h1>
-        <p> Achieved By {{ scores.username }} on {{ scores.date_posted }} </p>
+    {% for info in scores %}
+        <h1>{{ info.score }}</h1>
+        <p> Achieved By {{ info.username }} on {{ info.date_posted }} </p>
     {% endfor %}
   </body>
 </html>
