@@ -21,4 +21,4 @@ def home(request):
     return render(request, 'simon/home.html', leaderBoard)
 
 def about(request):
-    return render(request, 'simon/about.html', {'title: 'About'})
+    return render(request, 'simon/about.html', {'title': 'About'})
