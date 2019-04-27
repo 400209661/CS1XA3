@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -8,15 +9,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    {% load static %}
     <!-- CSS CUSTOM -->
-    <link rel=”stylesheet” type="text/css" href=”{% static ‘simon/main.css’ %}”>
+    <!--link rel=”stylesheet” type="text/css" href=”{% static ‘simon/main.css’ %}”-->
 
     {% if title %}
         <title>Django Simon - {{ title }}</title>
     {% else %}
         <title>Django Simon</title>
     {% endif %}
+    
   </head>
   <body>
     <header class="site-header">
