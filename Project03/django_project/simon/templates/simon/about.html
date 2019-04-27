@@ -2,7 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    {% if title %}
+        <title>Django Simon - {{ title }}</title>
+    {% else %}
+        <title>Django Simon</title>
+    {% endif %}
   </head>
   <body>
     <h1>About Page</h1>
