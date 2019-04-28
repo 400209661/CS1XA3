@@ -18,3 +18,12 @@ class ScoreListView(ListView):
 @login_required
 def about(request):
     return render(request, 'simon/about.html', {'title': 'Game'})
+
+def my_view_that_updates_pieFact(request):
+    if request.method == 'POST':
+        if 'score' in request.POST:
+            score = request.POST['score']
+            # doSomething with pieFact here...
+            return HttpResponse('success') # if everything is OK
+    # nothing went well
+    return HttpRepsonse('FAIL!!!!!')

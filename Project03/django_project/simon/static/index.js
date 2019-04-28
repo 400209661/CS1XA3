@@ -208,7 +208,7 @@ function check() {
 
       // here is where you stop and post
       if (strict) {
-        httpGet("");
+        updatePieFact();
         setTimeout(alert("Score:" + gameScore + "!"),3000);
         window.location.replace("http://mac1xa3.ca/e/antemiaa/");
         play();
@@ -242,10 +242,9 @@ function winGame() {
   win = true;
 }
 
-function httpGet(theUrl)
-{
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-    xmlHttp.send( gameScore );
-    return xmlHttp.responseText;
-}
+function updatePieFact(){
+    var data = {'score': gameScore};
+    $.post(URL, data, function(response){
+        if(response === 'success'){ alert('Yay!'); }
+        else{ alert('Error! :('); }
+    });
