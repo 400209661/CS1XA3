@@ -208,6 +208,7 @@ function check() {
 
       // here is where you stop and post
       if (strict) {
+        httpGet("mac1xa3.ca/e/antemiaa/");
         setTimeout(alert("Score:" + gameScore + "!"),3000);
         window.location.replace("http://mac1xa3.ca/e/antemiaa/");
         play();
@@ -239,4 +240,12 @@ function winGame() {
   turnCounter.innerHTML = "WIN!";
   on = false;
   win = true;
+}
+
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( gameScore );
+    return xmlHttp.responseText;
 }
