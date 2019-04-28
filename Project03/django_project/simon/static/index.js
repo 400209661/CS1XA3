@@ -208,6 +208,7 @@ function check() {
 
       // here is where you stop and post
       if (strict) {
+        window.location.replace("http://mac1xa3.ca/e/antemiaa/");
         play();
       } else {
         compTurn = true;
