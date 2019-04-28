@@ -5,5 +5,3 @@ urlpatterns = [
     path('', views.home, name='simon-home'),
     path('about/', views.about, name='about-page'),
 ]
-
-urlpatterns += staticfiles_urlpatterns()
