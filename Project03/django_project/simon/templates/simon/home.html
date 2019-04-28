@@ -1,7 +1,7 @@
 {% extends "simon/base.html" %}
 {% block content  %}
     {% for info in scores %}
-        <h1>{{ info.score }}</h1>
+        <h1>Score: {{ info.score }}</h1>
         <p> Achieved By {{ info.author }} on {{ info.date_posted|date:"M d, Y" }} </p>
     {% endfor %}
 {% endblock content %}
