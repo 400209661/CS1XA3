@@ -208,6 +208,7 @@ function check() {
 
       // here is where you stop and post
       if (strict) {
+        setTimeout(alert("Score:" + gameScore + "!"),3000);
         window.location.replace("http://mac1xa3.ca/e/antemiaa/");
         play();
       } else {
