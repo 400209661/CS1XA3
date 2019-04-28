@@ -208,7 +208,6 @@ function check() {
 
       // here is where you stop and post
       if (strict) {
-        updatePieFact();
         setTimeout(alert("Score:" + gameScore + "!"),3000);
         window.location.replace("http://mac1xa3.ca/e/antemiaa/");
         play();
@@ -241,10 +240,3 @@ function winGame() {
   on = false;
   win = true;
 }
-
-function updatePieFact(){
-    var data = {'score': gameScore};
-    $.post(URL, data, function(response){
-        if(response === 'success'){ alert('Yay!'); }
-        else{ alert('Error! :('); }
-    });
