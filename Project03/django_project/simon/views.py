@@ -16,7 +16,7 @@ scores = [
 
 def home(request):
     leaderBoard = {
-        'scores': Scores.objects.all()
+        'scores': Score.objects.all()
     }
     return render(request, 'simon/home.html', leaderBoard)
 
