@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 def register(request):
     if request.method == 'POST':
-        form = UsersCreationForm(request.POST)
+        form = UserCreationForm(request.POST)
         if form.is_valid():
             username = form.cleaned_data.get('username')
             messages.success(request, f'Account Created for {username}!')
