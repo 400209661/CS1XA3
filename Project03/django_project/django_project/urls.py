@@ -37,5 +37,11 @@ urlpatterns = [
     ),
     name ='password_reset_done'),
 
+    path('e/antemiaa/password-reset-confirm/<uidb64>/<token>/',
+    auth_views.PasswordResetConfirmView.as_view(
+    template_name= 'users/password_reset_confirm.html'
+    ),
+    name ='password_reset_confirm'),
+
     path('e/antemiaa/', include('simon.urls')),
 ]
