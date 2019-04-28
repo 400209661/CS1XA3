@@ -10,4 +10,4 @@ def home(request):
 
 @login_required
 def about(request):
-    return render(request, 'simon/about.html', {'title': 'Game'})
+    return render(request, 'simon/about.html', {'title': 'About'})
