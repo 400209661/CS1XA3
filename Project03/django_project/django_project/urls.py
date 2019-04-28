@@ -23,5 +23,6 @@ urlpatterns = [
     path('e/antemiaa/register/', user_views.register, name ='register'),
     path('e/antemiaa/login/', auth_views.LoginView.as_view(template_name= 'users/login.html'), name ='login'),
     path('e/antemiaa/logout/', auth_views.LogoutView.as_view(template_name= 'users/logout.html'), name ='logout'),
+    path('e/antemiaa/profile/', user_views.profile, name ='profile'),
     path('e/antemiaa/', include('simon.urls'))
 ]

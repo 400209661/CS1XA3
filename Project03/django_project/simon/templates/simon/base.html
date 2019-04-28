@@ -33,8 +33,13 @@
           </div>
           <!-- Navbar Right Side -->
           <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#">Login</a>
-            <a class="nav-item nav-link" href="#">Register</a>
+            {% if user.is_authenticated %}
+              <a class="nav-item nav-link" href="/e/antemiaa/profile">Profile</a>
+              <a class="nav-item nav-link" href="/e/antemiaa/logout/">Logout</a>
+            {% else %}
+              <a class="nav-item nav-link" href="/e/antemiaa/login/">Login</a>
+              <a class="nav-item nav-link" href="/e/antemiaa/register">Register</a>
+            {% endif %}
           </div>
         </div>
       </div>
