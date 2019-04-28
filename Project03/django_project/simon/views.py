@@ -13,7 +13,8 @@ class ScoreListView(ListView):
     model = Score
     template_name = 'simon/home.html'
     context_object_name = 'scores'
+    ordering = ['-date_posted']
 
 @login_required
 def about(request):
-    return render(request, 'simon/about.html', {'title': 'About'})
+    return render(request, 'simon/about.html', {'title': 'Game'})
