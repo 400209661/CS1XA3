@@ -13,7 +13,7 @@ class ScoreListView(ListView):
     model = Score
     template_name = 'simon/home.html'
     context_object_name = 'scores'
-    ordering = ['-check_in']
+    ordering = ['asc']
 
 @login_required
 def about(request):
