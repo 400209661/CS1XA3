@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from .models import Score
 
 scores = [
     {
@@ -16,7 +16,7 @@ scores = [
 
 def home(request):
     leaderBoard = {
-        'scores': scores
+        'scores': Scores.objects.all()
     }
     return render(request, 'simon/home.html', leaderBoard)
 

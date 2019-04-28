@@ -2,6 +2,6 @@
 {% block content  %}
     {% for info in scores %}
         <h1>{{ info.score }}</h1>
-        <p> Achieved By {{ info.username }} on {{ info.date_posted }} </p>
+        <p> Achieved By {{ info.author }} on {{ info.date_posted }} </p>
     {% endfor %}
 {% endblock content %}
